@@ -22,10 +22,10 @@ function App() {
 
             <Fragment>
                 <Navbar />
-                <Router>
+                <Router base="/my-spa-mittweida/">
                     <Switch>
                 <Route path="/" component={Home} />
-                <Route path="/home" component={Home} />
+                <Route path="/my-spa-mittweida/" component={Home} />
                     <Route path="/details/:id" component={CardDetails} />
                     <Route path="/textilehistory" component={TextilesHistory} />
                 <Route path="/localartisans" component={LocalArtisans} />

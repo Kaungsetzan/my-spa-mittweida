@@ -19,7 +19,7 @@ const HideSidebar=()=> SetSidebar(false);
         <>
         <nav >
             <div className="wrapper brand-container">
-            <Link to="/home" className="brand-name">Mittweida</Link>
+            <Link to="/my-spa-mittweida/" className="brand-name">Mittweida</Link>
             </div>
             <IoMdMenu  onClick={ShowSidebar} className="menu-icon" />
         </nav>
