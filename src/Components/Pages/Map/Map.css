@@ -1,0 +1,67 @@
+.Map {
+    height:100vh;
+    width: 100%;
+}
+.map-title{
+    margin: 25px 20px;
+}
+.favourites {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 200px;
+    color: white;
+    cursor: pointer;
+    background-color: #FF8900;
+    padding: 10px 20px;
+    border-radius: 2px;
+    text-decoration: none   ;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.leave-review{
+    display: inline-block;
+    margin: 40px 0px 60px 125px;
+    text-decoration: none;
+    color: rgb(255, 137, 0);
+    cursor: pointer;
+    background-color: rgba(255, 136, 0, 0.24);
+    padding: 10px 20px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.review-container{
+    width: 400px;
+    padding: 10px;
+    padding-bottom: 60px;
+}
+
+.line-design-map{
+    width: 80%;
+    height: 1px;
+    background-color: rgba(89, 65, 44, 0.22);
+    margin: 60px auto 0px auto;
+}
+.review-title{
+    font-size: 1.5rem;
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+
+.reviews-list{
+    /*border: 1px solid;*/
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    padding-bottom: 60px;
+}
+.reviews-list ul h2{
+    margin-bottom: 50px;
+}
+.map-reviews{
+    margin-top: 20px;
+}

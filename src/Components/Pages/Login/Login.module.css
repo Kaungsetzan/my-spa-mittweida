@@ -1,0 +1,29 @@
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginTitle{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.loginInput{
+    width: 230px;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: 'Crimson Text', serif;
+    border: none;
+    border-bottom: #FF8900 1px solid;
+}
+
+.loginButton{
+    margin: 40px 0;
+    border: none;
+    background-color: #FF8900;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Crimson Text', serif;
+}

@@ -1,0 +1,144 @@
+@media screen and (max-width: 640px) {*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+body{
+    font-family: 'Crimson Text', serif;
+    background-color: #FAFAFA;
+    color: #59412C;
+}
+.brand-name{
+    color: #59412C;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+nav{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon{
+    width: 40px;
+    height:40px;
+    color: orange;
+
+}
+
+/*sidebar css*/
+
+ul{
+    list-style: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-shadow: 3px 10px 40px 22px #FF8900;
+    z-index: 999;
+    opacity: 0;
+    transform: translateX()(-10px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+
+}
+
+.visible {
+    opacity: 100;
+    transform: translateX()(0);
+}
+.hidden{
+    opacity: 0;
+    transform: translateX()(-10px);
+    pointer-events: none;
+}
+
+.list-items {
+    margin-top: 100px;
+    margin-left: 70px;
+    text-decoration: none;
+}
+.list-items li{
+    margin-top: 20px;
+}
+.text-title{
+    color: #FF8900;
+}
+
+.list-title{
+margin-bottom:45px ;
+}
+
+    .info-items{
+        margin-left: 70px;
+        margin-top: 20px;
+
+    }
+    .info-items li{
+        margin-top: 5px;
+    }
+
+li a{
+
+    height: 100%;
+    text-decoration: none;
+    color: #59412C;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lang-converter{
+    margin: 30px;
+    padding: 6px;
+    margin-left: 230px;
+    border: #59412C solid 2px;
+    text-decoration: none;
+    color:#59412C ;
+    border-radius: 6px;
+}
+.close-icon{
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    color: #59412C;
+    top: 20px;
+
+}
+
+.line-design{
+    position: absolute;
+   top: 155px;
+    left: 50px;
+    height: 11px;
+    width: 300px;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: #59412C;
+    border-radius: 100%;
+    position: absolute;
+}
+.line{
+    height:1px;
+    width: 310px;
+    background-color: #59412C;
+    margin-top:4px;
+}
+}
+
+

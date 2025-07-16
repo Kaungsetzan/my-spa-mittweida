@@ -1,0 +1,14 @@
+.upcoming-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.upcoming-container h2 {
+    margin: 50px 0;
+}
+
+.upcoming-container p{
+    font-size: 1.1rem;
+}
