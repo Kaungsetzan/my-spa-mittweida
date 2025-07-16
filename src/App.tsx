@@ -1,7 +1,8 @@
 import './App.css';
+// @ts-ignore
 import '@fontsource/crimson-text';
 import { Fragment } from 'react';
-import { Switch, Route } from 'wouter';  // <-- from wouter
+import {Switch, Route, Router} from 'wouter';  // <-- from wouter
 import Navbar from "./Components/Navbar/Navbar";
 import Map from "./Components/Pages/Map/Map";
 import 'leaflet/dist/leaflet.css';
@@ -10,7 +11,6 @@ import Home from "./Components/Pages/Home/Home.tsx";
 import TextilesHistory from "./Components/Pages/TextileHistory/Textiles-history.tsx";
 import LocalArtisans from "./Components/Pages/LocalArtisans/LocalArtisans.tsx";
 import CardDetails from "./Components/Pages/CardDetails/CardDetails.tsx";
-import QRcodescanner from "./Components/Pages/QRCodeScanner/QRcodescanner.tsx";
 import Institutions from "./Components/Pages/Institutions/Institutions.tsx";
 import Companies from "./Components/Pages/Companies/Companies.tsx";
 import Review from "./Components/Pages/Reviews/review.tsx";
@@ -22,7 +22,8 @@ function App() {
 
             <Fragment>
                 <Navbar />
-                <Switch>
+                <Router>
+                    <Switch>
                 <Route path="/" component={Home} />
                 <Route path="/home" component={Home} />
                     <Route path="/details/:id" component={CardDetails} />
@@ -33,9 +34,9 @@ function App() {
                 <Route path="/events" component={Upcoming} />
                 <Route path="/map" component={Map} />
                 <Route path="/login" component={Login} />
-                <Route path="/qrcode" component={QRcodescanner} />
                 <Route path="/review" component={Review} />
                 </Switch>
+                </Router>
             </Fragment>
 
     );

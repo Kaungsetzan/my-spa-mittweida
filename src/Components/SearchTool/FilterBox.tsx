@@ -1,10 +1,15 @@
 import {IoClose} from "react-icons/io5";
 import "./searchTool.css"
 
+interface FilterBoxProps {
+    className?: string;
+    select: (textile: string) => void;
+    HideFilterBox: () => void;
+}
 
 
 
-export default function FilterBox(props){
+export default function FilterBox(props: FilterBoxProps){
 
 const selectTextile = (textile:string)=>{
     props.select(textile);

@@ -5,7 +5,7 @@ import FilterBox from "./FilterBox.tsx";
 
 describe("FilterBox component", ()=> {
     it("renders textile categories",()=>{
-        render(<FilterBox></FilterBox>);
+        render(<FilterBox HideFilterBox={()=>{}} className="" select={()=> {}}></FilterBox>);
         expect(screen.getByText("Select the specific textile")).toBeInTheDocument();
         expect(screen.getByText("Nonwovens")).toBeInTheDocument();
         expect(screen.getByText("Leather")).toBeInTheDocument();

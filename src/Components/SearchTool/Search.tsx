@@ -2,7 +2,15 @@
 import FilterBox from "./FilterBox.tsx";
 import {useState} from "react";
 
-export default function SearchTool(props){
+interface SearchToolProps {
+    select: (textile:string)=> void;
+    results: number;
+}
+
+
+
+
+export default function SearchTool(props: SearchToolProps){
 
     const [CurrentFilterBox, SetFilterBox]= useState(false);
 
