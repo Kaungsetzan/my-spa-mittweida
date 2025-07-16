@@ -1,6 +1,7 @@
+
+
 .Map {
     height:100vh;
-    width: 100%;
 }
 .map-title{
     margin: 25px 20px;
@@ -21,7 +22,7 @@
 
 .leave-review{
     display: inline-block;
-    margin: 40px 0px 60px 125px;
+    margin: 40px 0px 70px 120px;
     text-decoration: none;
     color: rgb(255, 137, 0);
     cursor: pointer;
@@ -31,9 +32,9 @@
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .review-container{
-    width: 400px;
-    padding: 10px;
-    padding-bottom: 60px;
+
+    padding: 10px 0px 50px 0;
+
 }
 
 .line-design-map{
@@ -57,11 +58,12 @@
     margin-left: 40px;
     margin-top: 30px;
     font-size: 1.1rem;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 .reviews-list ul h2{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
+
 .map-reviews{
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
