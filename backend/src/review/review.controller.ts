@@ -1,4 +1,4 @@
-import {Controller, Get, Post, Body, Param, Put, Delete} from '@nestjs/common';
+import {Controller, Get, Post, Body, Param, Put, Delete, NotFoundException} from '@nestjs/common';
 import { ReviewService } from './review.service';
 import {CreateReview, UpdateReview} from "./review.model";
 
@@ -10,6 +10,15 @@ export class ReviewController {
   @Get()
   async GetAllReviews():Promise<any> {
     return await this.reviewService.getAll();
+  }
+
+  @Get('/:id')
+  async GetReviewById(@Param('id') reviewId: string) {
+      const review = await this.reviewService.getReview(reviewId);
+      if (!review) {
+          throw new NotFoundException('Message with that id not found');
+      }
+      return review;
   }
   @Put('/:id')
   async updateReview(

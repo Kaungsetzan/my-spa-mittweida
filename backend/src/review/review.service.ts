@@ -13,6 +13,12 @@ export class ReviewService {
     const reviews = JSON.parse(raw) as Review[];
     return reviews;
     }
+    async getReview(reviewId: string) {
+        const raw = await fs.readFile(REVIEW_FILE,{ encoding: 'utf-8' });
+        const reviews = JSON.parse(raw) as Review[];
+        return reviews.find((review) => review.id === reviewId);
+    }
+
     async removeReview(reviewId: string) {
         const raw = await fs.readFile(REVIEW_FILE, { encoding: 'utf-8' });
         let reviews = JSON.parse(raw) as Review[];
